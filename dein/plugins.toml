@@ -1,0 +1,146 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]] # hybrid
+repo = 'w0ng/vim-hybrid'
+
+[[plugins]] # ステータスライン
+repo = 'itchyny/lightline.vim'
+hook_add = '''
+    let g:lightline = {'colorscheme': 'wombat'}
+'''
+
+[[plugins]] # Toml
+repo  = 'cespare/vim-toml'
+
+[[plugins]] # Golang
+repo = 'fatih/vim-go'
+
+[[plugins]] # Japanese doc
+repo = 'vim-jp/vimdoc-ja'
+hook_add = '''
+    set helplang=ja,en
+'''
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+
+[[plugins]]
+repo = "scrooloose/nerdtree"
+
+[[plugins]]
+repo = "tomlion/vim-solidity"
+
+[[plugins]]
+repo = 'ozelentok/denite-gtags'
+
+
+[[plugins]]
+repo = "junegunn/vim-easy-align"
+
+
+[[plugins]]
+repo = 'othree/yajs.vim'
+
+[[plugins]]
+repo = 'othree/es.next.syntax.vim'
+
+[[plugins]]
+repo = 'othree/javascript-libraries-syntax.vim'
+
+[[plugins]]
+repo = 'davidhalter/jedi-vim'
+
+[[plugins]]
+repo = 'maxmellon/vim-jsx-pretty'
+
+[[plugins]]
+repo = 'ervandew/supertab'
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
+
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
+[[plugins]]
+repo = 'carlitux/deoplete-ternjs'
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+
+
+[[plugins]]
+repo = "vim-airline/vim-airline"
+
+
+[[plugins]]
+repo = "tpope/vim-fugitive"
+
+
+[[plugins]]
+repo = "Shougo/denite.nvim"
+
+
+[[plugins]]
+repo = 'neovim/node-host'
+on_ft = ['javascript', 'javascript.jsx']
+hook_post_update = '''
+  let g:dein#plugin.build = 'npm install'
+'''
+
+[[plugins]]
+repo = 'billyvg/tigris.nvim'
+on_ft = ['javascript', 'javascript.jsx']
+hook_post_update = '''
+  let g:dein#plugin.build = './install.sh'
+'''
+hook_add = '''
+  let g:tigris#enabled = 1
+  let g:tigris#on_the_fly_enabled = 1
+  let g:tigris#delay = 300
+'''
+
+[[plugins]]
+repo = 'MaxMEllon/vim-jsx-pretty'
+
+[[plugins]]
+repo = 'moll/vim-node'
+on_ft = ['javascript']
+
+[[plugins]]
+repo = 'myhere/vim-nodejs-complete'
+on_ft = ['javascript']
+hook_add = '''
+  setl omnifunc=jscomplete#CompleteJS
+  if !exists('g:neocomplcache_omni_functions')
+    let g:neocomplcache_omni_functions = {}
+  endif
+  let g:neocomplcache_omni_functions.javascript = 'nodejscomplete#CompleteJS'
+  let g:node_usejscomplete = 1
+'''
+
+[[plugins]]
+repo = 'w0rp/ale.git'
+on_source = ['lightline.vim']
+hook_add = '''
+  let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '']
+'''
+
+[[plugins]]
+repo = "ruanyl/vim-fixmyjs"
+
+[[plugins]]
+repo = "prettier/vim-prettier"
+
+[[plugins]]
+repo = 'Townk/vim-autoclose'
+
+[[plugins]]
+repo = "gavocanov/vim-js-indent"
+
+[[plugins]]
+repo = "mxw/vim-jsx"
+
+[[plugins]]
+repo = "pangloss/vim-javascript"
