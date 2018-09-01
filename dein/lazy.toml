@@ -13,4 +13,8 @@ repo = 'Shougo/denite.nvim'
 on_source = 'denite.nvim'
 on_path = '.*'
 depends = ['neomru.vim']
+hook_add = '''
+nmap <silent> <C-u><C-l> :<C-u>Denite file_mru<CR>
+nmap <silent> <C-u><C-p> :<C-u>Denite file_rec<CR>
 
+'''

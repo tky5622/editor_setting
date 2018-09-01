@@ -39,8 +39,6 @@ repo = 'ozelentok/denite-gtags'
 repo = "junegunn/vim-easy-align"
 
 
-[[plugins]]
-repo = 'othree/yajs.vim'
 
 [[plugins]]
 repo = 'othree/es.next.syntax.vim'
@@ -51,8 +49,6 @@ repo = 'othree/javascript-libraries-syntax.vim'
 [[plugins]]
 repo = 'davidhalter/jedi-vim'
 
-[[plugins]]
-repo = 'maxmellon/vim-jsx-pretty'
 
 [[plugins]]
 repo = 'ervandew/supertab'
@@ -134,13 +130,41 @@ repo = "ruanyl/vim-fixmyjs"
 repo = "prettier/vim-prettier"
 
 [[plugins]]
-repo = 'Townk/vim-autoclose'
-
-[[plugins]]
-repo = "gavocanov/vim-js-indent"
-
-[[plugins]]
-repo = "mxw/vim-jsx"
+repo = 'maxmellon/vim-jsx-pretty'
 
 [[plugins]]
 repo = "pangloss/vim-javascript"
+on_ft = ['javascript', 'javascript.jsx']
+hook_add = '''
+  let g:javascript_plugin_flow = 1
+  let g:javascript_plugin_jsdoc = 1
+'''
+
+
+[[plugins]]
+repo = "wokalski/autocomplete-flow"
+
+[[plugins]]
+repo = "Shougo/neosnippet"
+hook_add = '''
+  let g:neosnippet#enable_completed_snippet = 1
+'''
+
+[[plugins]]
+repo = "Shougo/neosnippet-snippets"
+
+[[plugins]]
+repo = "flowtype/vim-flow"
+
+
+[[plugins]]
+repo = 'chemzqm/vim-jsx-improve'
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+
+[[plugins]]
+repo = 'cohama/lexima.vim'
+
+[[plugins]]
+repo = 'edisonljh/vim-scilla'
